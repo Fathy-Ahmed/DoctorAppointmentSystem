@@ -1,0 +1,123 @@
+﻿@model AppointmentVM
+
+@{
+    ViewData["Title"] = "Appointment";
+}
+
+<h4>Appointment Details</h4>
+<hr />
+<br />
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="doctor">
+                <div class="head d-flex flex-column align-items-center text-center">
+                    <div class="image">
+                        <img src="/@Model.DocotrImg" alt="Doctor Image" class="img-thumbnail" style="width:200px; height:200px;"/>
+                    </div>
+                    <div class="mt-2">
+                        <h5>Dr. @Model.DocotrName</h5>
+                    </div>
+                </div>
+                <div class="contant mt-3">
+                    <div class="Specialties">
+                        <h6>Specialties</h6>
+                        <p>@Model.DocotrSpecialties</p>
+                    </div>
+                    <div class="Practices">
+                        <h6>Practices</h6>
+                        <p>@Model.ClinicLocation</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-8">
+            <form method="post">
+                <div asp-validation-summary="All" class="text-danger"></div>
+                <input type="hidden" asp-for="DocotrId" />
+                <input type="hidden" asp-for="PatientId" />
+                <input type="hidden" asp-for="DocotrName" />
+                <input type="hidden" asp-for="DocotrImg" />
+                <input type="hidden" asp-for="DocotrSpecialties" />
+                <input type="hidden" asp-for="ClinicLocation" />
+
+                <div class="form-group mb-3">
+                    <label asp-for="Date" class="form-label"></label>
+                    <input asp-for="Date" type="date" class="form-control" />
+                    <span asp-validation-for="Date" class="text-danger"></span>
+                </div>
+                <div class="form-group mb-3">
+                    <label asp-for="Time" class="form-label"></label>
+                    <input asp-for="Time" type="time" class="form-control" />
+                    <span asp-validation-for="Time" class="text-danger"></span>
+                </div>
+                <div class="form-group mb-3">
+                    <label asp-for="Reason" class="form-label"></label>
+                    <input asp-for="Reason" class="form-control" />
+                    <span asp-validation-for="Reason" class="text-danger"></span>
+                </div>
+                <div class="form-group mb-3">
+                    <label class="form-check-label">Who is this appointment for?</label><br />
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" name="ForWho" id="forMe" value="true" checked />
+                        <label class="form-check-label" for="forMe">Me</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" name="ForWho" id="forSomeoneElse" value="false" />
+                        <label class="form-check-label" for="forSomeoneElse">Someone else</label>
+                    </div>
+                </div>
+                <div class="form-group mb-3" id="patientNameField">
+                    <label asp-for="PatientName" class="form-label"></label>
+                    <input asp-for="PatientName" class="form-control" value=""/>
+                    <span asp-validation-for="PatientName" class="text-danger"></span>
+                </div>
+                <div class="form-group mb-3">
+                    <label asp-for="Message" class="form-label"></label>
+                    <input asp-for="Message" class="form-control" />
+                    <span asp-validation-for="Message" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <a asp-action="GetById" asp-controller="Doctor" asp-route-id="@Model.DocotrId" class="btn btn-primary">Back</a>
+                    <input type="submit" value="Create" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+    
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+
+     <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Initial check
+            togglePatientNameField();
+
+            // Attach event listeners to radio buttons
+            document.querySelectorAll('input[name="ForWho"]').forEach(function (radio) {
+                radio.addEventListener('change', togglePatientNameField);
+            });
+
+            function togglePatientNameField() {
+                const isForMe = document.querySelector('input[name="ForWho"]:checked').value === "true";
+                document.getElementById('patientNameField').style.display = isForMe ? 'none' : 'block';
+            }
+        });
+    </script> 
+
+    
+    
+
+
+
+
+}

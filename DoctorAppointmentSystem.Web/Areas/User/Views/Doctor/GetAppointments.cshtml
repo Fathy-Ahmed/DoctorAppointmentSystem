@@ -1,0 +1,48 @@
+﻿@model List<DoctorAppointmentsVM>
+@{
+	ViewData["Title"] = "Doctor Appointments";
+}
+<br />
+
+<div class="col-12  col-xxl-9 d-flex">
+	<div class="card flex-fill">
+		<div class="card-header">
+
+			<h5 class="card-title mb-0">Appointments</h5>
+		</div>
+		<table class="table table-hover my-0">
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th class="d-none d-xl-table-cell">Email</th>
+					<th class="d-none d-xl-table-cell">Phone</th>
+					<th class="d-none d-md-table-cell">Date</th>
+					<th class="d-none d-md-table-cell">Time</th>
+					<th>Reason</th>
+					<th>Message</th>
+					<th>Status</th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody>
+				@foreach (var item in Model)
+				{
+					<tr>
+						<td>@item.PatientName</td>
+						<td class="d-none d-xl-table-cell">@item.PatientEmail</td>
+						<td class="d-none d-xl-table-cell">@item.PatientPhoneNumber</td>
+						<td class="d-none d-xl-table-cell">@item.Date</td>
+						<td class="d-none d-md-table-cell">@item.Time</td>
+						<td>@item.Reason</td>
+						<td>@item.Message</td>
+						<td>@item.Status</td>
+						<td>
+							<a asp-action="Verify" asp-controller="Appointment" asp-route-id="@item.AppointmentId" class="btn btn-success">Verified</a>
+							<a asp-action="Cancel" asp-controller="Appointment" asp-route-id="@item.AppointmentId" class="btn btn-danger">Cancele</a>
+							</td>
+					</tr>
+				}
+			</tbody>
+		</table>
+	</div>
+</div>

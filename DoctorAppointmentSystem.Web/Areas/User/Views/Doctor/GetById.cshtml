@@ -1,0 +1,79 @@
+﻿@using DoctorAppointmentSystem.Utilities
+@model Doctor
+@{
+    ViewData["Title"] = Model.FirstName + " " + Model.LastName;
+}
+<h2 style="text-align:center;">Doctor Details</h2><br /><br />
+
+<div class="container">
+    <div class="main">
+        <div class="head" style="display:flex; justify-content:start;">
+            <div class="image"> <img src="/@Model.Img" alt="Alternate Text" style="width:200px; height:200px; margin: 10px 10px;" /></div>
+            <div>
+                <h3>Dr. @Model.FirstName @Model.LastName</h3>
+                <span style="display:block; font-size:20px;">Clinic: @Model.Specialties</span>
+                <span style="display:block; font-size:20px;">Clinic: @Model.ClinicLocation</span>
+                <span style="display:block; font-size:20px;">Experience: +@Model.ExperienceYears</span>
+                <span style="display:block; font-size:20px;">Phone: @Model.ApplicationUser.PhoneNumber</span>
+            </div>
+        </div><br />
+        <div class="contant">
+            <div class="About">
+                <h4>About the Doctor</h4>
+                <p>
+                    لسه هضيفه فى DB
+                </p>
+            </div>
+            <div class="Education">
+                <h4>Education</h4>
+                <p>
+                    @Model.Qualification
+                </p>
+            </div>
+        </div>
+    </div>
+    @if (!User.IsInRole(SD.DoctorRole))
+    {
+        if (User.Identity.IsAuthenticated)
+        {
+            <a class="fixed-button" asp-action="Add" asp-controller="Appointment" asp-route-id="@Model.Id">Book an Appointment Now!</a>
+        }
+        else
+        {
+            <a class="fixed-button" asp-action="Login" asp-controller="Account" asp-area="Identity">Book an Appointment Now!</a>
+
+        }
+
+    }
+
+</div>
+
+
+
+<style>
+    .fixed-button {
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 50%; /* Button takes 50% of the viewport width */
+        padding: 10px;
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-align: center; /* Center text inside the button */
+        text-decoration:none;
+        font-weight:bold;
+        font-size:20px;
+    }
+
+    .fixed-button:hover {
+            background-color: #0056b3;
+    }
+
+</style>
+@section Scripts{
+    
+}

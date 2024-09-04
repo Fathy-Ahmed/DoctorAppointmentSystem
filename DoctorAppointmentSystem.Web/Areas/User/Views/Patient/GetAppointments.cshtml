@@ -1,0 +1,243 @@
+﻿@model List<PatientAppointmentsVM>
+@{
+    ViewData["Title"] = "Patient Appointments";
+}
+<div class="card-container">
+    @foreach (var item in Model)
+    {
+        <div class="card">
+            <div class="card-heading">
+                <h3 class="card-title">
+                    Dr. @item.DoctorName /
+                    <span class="label label-success">
+                        @item.DoctorClinicName
+                    </span>
+                    / <i class="fa fa-clock-o"></i>
+                    @item.Date.ToShortDateString()
+                </h3>
+                <ul class="card-actions">
+                    <li>
+                        <a class="btn" asp-action="Reschedule" asp-controller="Appointment" asp-route-id="@item.AppointmentId">
+                            <i class="fa fa-calendar"></i>
+                            Reschedule
+                        </a>
+                    </li>
+                    <li>
+                        <a class="btn btn-danger" asp-action="Cancel" asp-controller="Appointment" asp-route-id="@item.AppointmentId">
+                            <i class="fa fa-times-circle-o"></i>
+                            Cancel
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="card-body">
+                <div class="card-info">
+                    <div class="card-section">
+                        <h4>Doctor Info</h4>
+                        <hr />
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td rowspan="2" width="70">
+                                        <img class="img-thumbnail"
+                                             src="/@item.DoctorImg"
+                                             alt="Doctor" />
+                                    </td>
+                                    <td>Dr.</td>
+                                    <td>
+                                        <a asp-action="GetById" asp-controller="Doctor" asp-route-id="@item.DoctorId">
+                                            @item.DoctorName
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Phone</td>
+                                    <td>
+                                        @item.DoctorPhoneNumber
+                                        <a href="tel:@item.DoctorPhoneNumber" class="btn btn-call btn-xs">
+                                            <i class="fa fa-phone"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="card-section">
+                        <h4>Clinic Info</h4>
+                        <hr />
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td>Clinic/Hospital</td>
+                                    <td>
+                                        <a href="#">
+                                            @item.DoctorClinicName
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Location</td>
+                                    <td>
+                                        @item.ClinicLocation
+                                        <a target="_blank"
+                                           href="#"
+                                           class="btn btn-call btn-xs">
+                                            <i class="fa fa-map-marker"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <h4>Appointment Info</h4>
+                    <hr />
+                    <div class="card-section">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td>Reason</td>
+                                    <td>@item.Reason</td>
+                                </tr>
+                                <tr>
+                                    <td>Date &amp; Time</td>
+                                    <td>@item.Date.ToShortDateString(), @item.Time.ToShortTimeString()</td>
+                                </tr>
+                                <tr>
+                                    <td>Rescheduling</td>
+                                    <td>Rescheduled on Aug 31, 2024</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="card-section">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td>Status</td>
+                                    <td>
+                                        <strong>@item.Status</strong>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+
+
+
+<style>
+
+    .card-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 40px 40px;
+        box-sizing: border-box;
+    }
+
+    .card {
+        width: 100%; /* Card takes full width of the container */
+        max-width: 1200px; /* Optional: Set a maximum width for large screens */
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        overflow: hidden;
+        background: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-heading {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        background-color: #f5f5f5;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .card-title {
+        margin: 0;
+        font-size: 16px;
+        line-height: 1.2;
+    }
+
+    .card-actions {
+        display: flex;
+        gap: 8px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+        .card-actions a {
+            text-decoration: none;
+            color: #333;
+        }
+
+    .card-body {
+        padding: 10px;
+        flex: 1; /* Allows the card body to expand and fill available space */
+    }
+
+    .card-info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-section {
+        margin-bottom: 10px;
+    }
+
+    .table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+        .table td {
+            padding: 6px;
+            border: 1px solid #ddd;
+        }
+
+    .img-thumbnail {
+        width: 100%;
+        height: auto;
+        border-radius: 4px;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 4px 8px;
+        font-size: 12px;
+        line-height: 1.5;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 4px;
+    }
+
+    .btn-danger {
+        color: #fff;
+        background-color: #d9534f;
+    }
+
+    .btn-call {
+        color: #333;
+    }
+
+    .label-success {
+        color: #fff;
+        background-color: #5bc0de;
+    }
+
+    .fa {
+        margin-right: 4px;
+    }
+</style>

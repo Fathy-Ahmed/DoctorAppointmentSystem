@@ -1,0 +1,30 @@
+﻿@model List<AdminRequestsDoctorVM>
+@{
+	Layout = "_AdminLayout";
+	ViewData["Title"] = "Admin";
+}
+<h3 style="text-align:center;">Doctors Requests</h3>
+<hr />
+<main class="content">
+	<div class="container-fluid p-0">
+		<div class="row">
+			<div class="col-12 col-md-6">
+				@foreach (var item in Model)
+				{
+					<div class="card">
+						<img class="card-img-top" src="/@item.Img" alt="Unsplash">
+						<div class="card-header">
+							<h5 class="card-title mb-0">@item.Name</h5>
+						</div>
+						<div class="card-body">
+							<p class="card-text">@item.Qualification</p>
+							<p class="card-text">@item.Specialties</p>
+							<p class="card-text">Exp: @item.ExperienceYears</p>
+							<a asp-action="ApproveDoctor" asp-route-id="@item.Id" class="btn btn-primary">Approve</a>
+						</div>
+					</div>
+				}
+			</div>
+		</div>
+	</div>
+</main>

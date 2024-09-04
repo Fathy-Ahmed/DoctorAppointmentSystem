@@ -1,0 +1,11 @@
+C:\Users\fathy\source\repos\DoctorAppointmentSystem\DoctorAppointmentSystem.Utilities\bin\Debug\net8.0\DoctorAppointmentSystem.Utilities.deps.json
+C:\Users\fathy\source\repos\DoctorAppointmentSystem\DoctorAppointmentSystem.Utilities\bin\Debug\net8.0\DoctorAppointmentSystem.Utilities.dll
+C:\Users\fathy\source\repos\DoctorAppointmentSystem\DoctorAppointmentSystem.Utilities\bin\Debug\net8.0\DoctorAppointmentSystem.Utilities.pdb
+C:\Users\fathy\source\repos\DoctorAppointmentSystem\DoctorAppointmentSystem.Utilities\obj\Debug\net8.0\DoctorAppointmentSystem.Utilities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fathy\source\repos\DoctorAppointmentSystem\DoctorAppointmentSystem.Utilities\obj\Debug\net8.0\DoctorAppointmentSystem.Utilities.AssemblyInfoInputs.cache
+C:\Users\fathy\source\repos\DoctorAppointmentSystem\DoctorAppointmentSystem.Utilities\obj\Debug\net8.0\DoctorAppointmentSystem.Utilities.AssemblyInfo.cs
+C:\Users\fathy\source\repos\DoctorAppointmentSystem\DoctorAppointmentSystem.Utilities\obj\Debug\net8.0\DoctorAppointmentSystem.Utilities.csproj.CoreCompileInputs.cache
+C:\Users\fathy\source\repos\DoctorAppointmentSystem\DoctorAppointmentSystem.Utilities\obj\Debug\net8.0\DoctorAppointmentSystem.Utilities.dll
+C:\Users\fathy\source\repos\DoctorAppointmentSystem\DoctorAppointmentSystem.Utilities\obj\Debug\net8.0\refint\DoctorAppointmentSystem.Utilities.dll
+C:\Users\fathy\source\repos\DoctorAppointmentSystem\DoctorAppointmentSystem.Utilities\obj\Debug\net8.0\DoctorAppointmentSystem.Utilities.pdb
+C:\Users\fathy\source\repos\DoctorAppointmentSystem\DoctorAppointmentSystem.Utilities\obj\Debug\net8.0\ref\DoctorAppointmentSystem.Utilities.dll

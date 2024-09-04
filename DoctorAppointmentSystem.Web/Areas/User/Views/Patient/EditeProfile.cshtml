@@ -1,0 +1,60 @@
+﻿@model PatientVM
+
+@{
+    ViewData["Title"] = "Edite Profile";
+}
+
+<h1 style="text-align:center;">Edite Profile</h1>
+
+<hr />
+<div class="row" style="height:450px">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <input type="hidden" asp-for="Email" />
+            <input type="hidden" asp-for="UserName" />
+            <input type="hidden" asp-for="Patient.Id" />
+            <input type="hidden" asp-for="Patient.ApplicationUserId" />
+            <div class="form-group">
+                <label asp-for="Patient.Name" class="control-label"></label>
+                <input asp-for="Patient.Name" class="form-control" />
+                <span asp-validation-for="Patient.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Patient.Age" class="control-label"></label>
+                <input asp-for="Patient.Age" class="form-control" />
+                <span asp-validation-for="Patient.Age" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label>Select Gender:</label><br />
+                <div class="form-check form-check-inline">
+                    <input asp-for="Patient.Gender" class="form-check-input" type="radio" id="male" value="Male">
+                    <label class="form-check-label" for="male">Male</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input asp-for="Patient.Gender" class="form-check-input" type="radio" id="female" value="Female">
+                    <label class="form-check-label" for="female">Female</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="PhoneNumber" class="control-label"></label>
+                <input asp-for="PhoneNumber" class="form-control" />
+                <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Patient.MedicalHistory" class="control-label"></label>
+                <input asp-for="Patient.MedicalHistory" class="form-control" />
+                <span asp-validation-for="Patient.MedicalHistory" class="text-danger"></span>
+            </div>
+            <div class="form-group" style="text-align:center;">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

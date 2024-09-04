@@ -1,0 +1,126 @@
+﻿@using DoctorAppointmentSystem.Utilities
+@model DoctorRegisterVM
+
+@{
+    ViewData["Title"] = "Doctor Register";
+}
+<h1>Register as a Doctor</h1>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post" enctype="multipart/form-data">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="FirstName" class="control-label"></label>
+                <input asp-for="FirstName" class="form-control" />
+                <span asp-validation-for="FirstName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LastName" class="control-label"></label>
+                <input asp-for="LastName" class="form-control" />
+                <span asp-validation-for="LastName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label>Select Gender:</label><br />
+                <div class="form-check form-check-inline">
+                    <input asp-for="Gender" class="form-check-input" type="radio" id="male" value="Male">
+                    <label class="form-check-label" for="male">Male</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input asp-for="Gender" class="form-check-input" type="radio" id="female" value="Female">
+                    <label class="form-check-label" for="female">Female</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="Img" class="control-label"></label>
+                <input asp-for="Img" type="file" name="file" id="imgfile" class="form-control" onchange="fillImg(event)" />
+                <span asp-validation-for="Img" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Qualification" class="control-label"></label>
+                <input asp-for="Qualification" class="form-control" />
+                <span asp-validation-for="Qualification" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Specialties" class="control-label"></label>
+                @* <input asp-for="Specialties" class="form-control" /> *@
+                <textarea asp-for="Specialties" class="form-control"></textarea>
+                <span asp-validation-for="Specialties" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ExperienceYears" class="control-label"></label>
+                <input asp-for="ExperienceYears" class="form-control" />
+                <span asp-validation-for="ExperienceYears" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ClinicLocation" class="control-label"></label>
+                <input asp-for="ClinicLocation" class="form-control" />
+                <span asp-validation-for="ClinicLocation" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FromDay" class="control-label"></label>
+                <select class="form-control" asp-for="FromDay">
+                    <option disabled selected>--- Select Day ---</option>
+                    <option value="@SD.Saturday">Saturday</option>
+                    <option value="@SD.Sunday">Sunday</option>
+                    <option value="@SD.Monday">Monday</option>
+                    <option value="@SD.Tuesday">Tuesday</option>
+                    <option value="@SD.Wednesday">Wednesday</option>
+                    <option value="@SD.Thursday">Thursday</option>
+                    <option value="@SD.Friday">Friday</option>
+                </select>
+                <span asp-validation-for="FromDay" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ToDay" class="control-label"></label>
+                <select class="form-control" asp-for="ToDay">
+                    <option disabled selected>--- Select Day ---</option>
+                    <option value="@SD.Saturday">Saturday</option>
+                    <option value="@SD.Sunday">Sunday</option>
+                    <option value="@SD.Monday">Monday</option>
+                    <option value="@SD.Tuesday">Tuesday</option>
+                    <option value="@SD.Wednesday">Wednesday</option>
+                    <option value="@SD.Thursday">Thursday</option>
+                    <option value="@SD.Friday">Friday</option>
+                </select>
+                <span asp-validation-for="ToDay" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StartTime" class="control-label"></label>
+                <input type="time" asp-for="StartTime" class="form-control" />
+                <span asp-validation-for="StartTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EndTime" class="control-label"></label>
+                <input type="time" asp-for="EndTime" class="form-control" />
+                <span asp-validation-for="EndTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NumberOfPatientInDay" class="control-label"></label>
+                <input asp-for="NumberOfPatientInDay" class="form-control" />
+                <span asp-validation-for="NumberOfPatientInDay" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Register" class="btn btn-primary" />
+            </div>
+        </form>
+        
+    </div>
+    <div class="col-md-4">
+        <div class="container">
+            <img id="ImagePrevew" width="300" height="300" />
+        </div>
+    </div>
+</div>
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script>
+        var fillImg = function (event) {
+            var imgholder = document.getElementById("ImagePrevew");
+            imgholder.src = URL.createObjectURL(event.target.files[0]);
+        }
+    </script>
+}

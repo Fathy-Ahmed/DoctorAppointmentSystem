@@ -1,0 +1,15 @@
+C:\Users\fathy\source\repos\DoctorAppointmentSystem\DoctorAppointmentSystem.Entities\bin\Debug\net8.0\DoctorAppointmentSystem.Entities.deps.json
+C:\Users\fathy\source\repos\DoctorAppointmentSystem\DoctorAppointmentSystem.Entities\bin\Debug\net8.0\DoctorAppointmentSystem.Entities.dll
+C:\Users\fathy\source\repos\DoctorAppointmentSystem\DoctorAppointmentSystem.Entities\bin\Debug\net8.0\DoctorAppointmentSystem.Entities.pdb
+C:\Users\fathy\source\repos\DoctorAppointmentSystem\DoctorAppointmentSystem.Entities\obj\Debug\net8.0\DoctorAppointmentSystem.Entities.csproj.AssemblyReference.cache
+C:\Users\fathy\source\repos\DoctorAppointmentSystem\DoctorAppointmentSystem.Entities\obj\Debug\net8.0\DoctorAppointmentSystem.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fathy\source\repos\DoctorAppointmentSystem\DoctorAppointmentSystem.Entities\obj\Debug\net8.0\DoctorAppointmentSystem.Entities.AssemblyInfoInputs.cache
+C:\Users\fathy\source\repos\DoctorAppointmentSystem\DoctorAppointmentSystem.Entities\obj\Debug\net8.0\DoctorAppointmentSystem.Entities.AssemblyInfo.cs
+C:\Users\fathy\source\repos\DoctorAppointmentSystem\DoctorAppointmentSystem.Entities\obj\Debug\net8.0\DoctorAppointmentSystem.Entities.csproj.CoreCompileInputs.cache
+C:\Users\fathy\source\repos\DoctorAppointmentSystem\DoctorAppointmentSystem.Entities\obj\Debug\net8.0\DoctorAppointmentSystem.Entities.dll
+C:\Users\fathy\source\repos\DoctorAppointmentSystem\DoctorAppointmentSystem.Entities\obj\Debug\net8.0\refint\DoctorAppointmentSystem.Entities.dll
+C:\Users\fathy\source\repos\DoctorAppointmentSystem\DoctorAppointmentSystem.Entities\obj\Debug\net8.0\DoctorAppointmentSystem.Entities.pdb
+C:\Users\fathy\source\repos\DoctorAppointmentSystem\DoctorAppointmentSystem.Entities\obj\Debug\net8.0\ref\DoctorAppointmentSystem.Entities.dll
+C:\Users\fathy\source\repos\DoctorAppointmentSystem\DoctorAppointmentSystem.Entities\bin\Debug\net8.0\DoctorAppointmentSystem.Utilities.dll
+C:\Users\fathy\source\repos\DoctorAppointmentSystem\DoctorAppointmentSystem.Entities\bin\Debug\net8.0\DoctorAppointmentSystem.Utilities.pdb
+C:\Users\fathy\source\repos\DoctorAppointmentSystem\DoctorAppointmentSystem.Entities\obj\Debug\net8.0\DoctorAp.A83E4742.Up2Date

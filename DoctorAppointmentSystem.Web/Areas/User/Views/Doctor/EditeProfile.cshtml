@@ -1,0 +1,126 @@
+﻿@using DoctorAppointmentSystem.Utilities
+@model DoctorVM
+@{
+    ViewData["Title"] = "Edit Profile";
+}
+
+<form method="post" enctype="multipart/form-data">
+    <div asp-validation-summary="All"></div>
+    @* <input type="hidden" asp-for="Doctor.Id" /> *@
+    <input type="hidden" asp-for="Email" />
+    <input type="hidden" asp-for="ApplicationUserId" />
+    <input  type="hidden" asp-for="Img" />
+<div class="container rounded bg-white mt-5 mb-5">
+    <div class="row">
+            <div class="col-md-3 border-right">
+                <div class="d-flex flex-column align-items-center text-center p-3 py-5">
+                    <input type="file" asp-for="Img" name="file" id="fileInput" style="display: none;">
+                    <img class="rounded-circle mt-5" style="cursor: pointer;" id="photo" width="300px" alt="Click to change photo" src="\@Model.Img">
+                    <span class="font-weight-bold">@Model.FirstName @Model.LastName</span><span class="text-black-50">@Model.Email</span><span> </span></div>
+            </div>
+            <div class="col-md-5 border-right">
+                <div class="p-3 py-5">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h4 class="text-right">Profile Settings</h4>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-md-6"><label class="labels">First Name</label><input type="text" class="form-control" asp-for="FirstName" placeholder="first name" ></div>
+                        <div class="col-md-6"><label class="labels">Last Name</label><input type="text" class="form-control" asp-for="LastName" placeholder="last name"></div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-12">
+                            <label class="labels">Gender</label>
+                            <br />
+                            <div class="form-check form-check-inline">
+                                <input asp-for="Gender" class="form-check-input" type="radio" id="male" value="Male">
+                                <label class="form-check-label" for="male">Male</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input asp-for="Gender" class="form-check-input" type="radio" id="female" value="Female">
+                                <label class="form-check-label" for="female">Female</label>
+                            </div>
+                            </div>
+                        <div class="col-md-12"><label class="labels">Mobile Number</label><input type="text" class="form-control" placeholder="enter phone number" asp-for="PhoneNumber"></div>
+                        <div class="col-md-12"><label class="labels">Clinic Location</label><input type="text" class="form-control" placeholder="enter address line 1" asp-for="ClinicLocation"></div>
+                        <div class="col-md-12"><label class="labels">User Name</label><input type="text" class="form-control" placeholder="enter user name" asp-for="UserName"></div>
+                        <div class="col-md-12"><label class="labels">Qualification</label><input type="text" class="form-control" placeholder="education" asp-for="Qualification"></div>
+                        <div class="col-md-12"><label class="labels">Specialties</label><textarea  class="form-control" placeholder="Specialties" asp-for="Specialties"></textarea></div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-6"><label class="labels">Experience Years</label><input type="number" class="form-control" placeholder="ExperienceYears" asp-for="ExperienceYears"></div>
+                        @* <div class="col-md-6"><label class="labels">State/Region</label><input type="text" class="form-control" value="" placeholder="state"></div> *@
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-3 py-5">
+                    <div class="col-md-12">
+                        <label asp-for="FromDay" class="control-label"></label>
+                        <select class="form-control" asp-for="FromDay">
+                            <option disabled selected>--- Select Day ---</option>
+                            <option value="@SD.Saturday">Saturday</option>
+                            <option value="@SD.Sunday">Sunday</option>
+                            <option value="@SD.Monday">Monday</option>
+                            <option value="@SD.Tuesday">Tuesday</option>
+                            <option value="@SD.Wednesday">Wednesday</option>
+                            <option value="@SD.Thursday">Thursday</option>
+                            <option value="@SD.Friday">Friday</option>
+                        </select>
+                        <span asp-validation-for="FromDay" class="text-danger"></span>
+                    </div> <br>
+                    <div class="col-md-12">
+                        <label asp-for="ToDay" class="control-label"></label>
+                        <select class="form-control" asp-for="ToDay">
+                            <option disabled selected>--- Select Day ---</option>
+                            <option value="@SD.Saturday">Saturday</option>
+                            <option value="@SD.Sunday">Sunday</option>
+                            <option value="@SD.Monday">Monday</option>
+                            <option value="@SD.Tuesday">Tuesday</option>
+                            <option value="@SD.Wednesday">Wednesday</option>
+                            <option value="@SD.Thursday">Thursday</option>
+                            <option value="@SD.Friday">Friday</option>
+                        </select>
+                        <span asp-validation-for="ToDay" class="text-danger"></span>
+                    </div> <br>
+                    <div class="col-md-12">
+                        <label asp-for=" StartTime" class="control-label"></label>
+                        <input type="time" asp-for=" StartTime" class="form-control" />
+                        <span asp-validation-for=" StartTime" class="text-danger"></span>
+                    </div><br>
+                    <div class="col-md-12">
+                        <label asp-for=" EndTime" class="control-label"></label>
+                        <input type="time" asp-for=" EndTime" class="form-control" />
+                        <span asp-validation-for=" EndTime" class="text-danger"></span>
+                    </div><br>
+                    <div class="col-md-12">
+                        <label asp-for=" NumberOfPatientInDay" class="control-label"></label>
+                        <input type="number" asp-for=" NumberOfPatientInDay" class="form-control" />
+                        <span asp-validation-for=" NumberOfPatientInDay" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-5 text-center"><input class="btn btn-primary profile-button" type="submit" value="Save Profile" /></div>
+        </div>
+</div>
+</form>
+
+@section Scripts {
+     <script>
+        document.getElementById('photo').addEventListener('click', function () {
+            document.getElementById('fileInput').click();
+        });
+
+        document.getElementById('fileInput').addEventListener('change', function (event) {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    document.getElementById('photo').src = e.target.result;
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+    </script> 
+
+
+}
