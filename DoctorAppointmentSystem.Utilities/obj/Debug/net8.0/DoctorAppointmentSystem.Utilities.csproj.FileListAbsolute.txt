@@ -9,3 +9,4 @@ C:\Users\fathy\source\repos\DoctorAppointmentSystem\DoctorAppointmentSystem.Util
 C:\Users\fathy\source\repos\DoctorAppointmentSystem\DoctorAppointmentSystem.Utilities\obj\Debug\net8.0\refint\DoctorAppointmentSystem.Utilities.dll
 C:\Users\fathy\source\repos\DoctorAppointmentSystem\DoctorAppointmentSystem.Utilities\obj\Debug\net8.0\DoctorAppointmentSystem.Utilities.pdb
 C:\Users\fathy\source\repos\DoctorAppointmentSystem\DoctorAppointmentSystem.Utilities\obj\Debug\net8.0\ref\DoctorAppointmentSystem.Utilities.dll
+C:\Users\fathy\source\repos\DoctorAppointmentSystem\DoctorAppointmentSystem.Utilities\obj\Debug\net8.0\DoctorAppointmentSystem.Utilities.sourcelink.json

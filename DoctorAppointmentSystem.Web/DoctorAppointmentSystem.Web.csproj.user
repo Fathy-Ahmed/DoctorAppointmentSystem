@@ -16,6 +16,7 @@
     <WebStackScaffolding_LayoutPageFile />
     <Area_SelectedScaffolderID>AreaScaffolder</Area_SelectedScaffolderID>
     <Area_SelectedScaffolderCategoryPath>root/Common</Area_SelectedScaffolderCategoryPath>
+    <NameOfLastUsedPublishProfile>C:\Users\fathy\source\repos\DoctorAppointmentSystem\DoctorAppointmentSystem.Web\Properties\PublishProfiles\site8230-WebDeploy.pubxml</NameOfLastUsedPublishProfile>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>

@@ -17,3 +17,4 @@ C:\Users\fathy\source\repos\DoctorAppointmentSystem\DoctorAppointmentSystem.Data
 C:\Users\fathy\source\repos\DoctorAppointmentSystem\DoctorAppointmentSystem.DataAccess\obj\Debug\net8.0\DoctorAppointmentSystem.DataAccess.genruntimeconfig.cache
 C:\Users\fathy\source\repos\DoctorAppointmentSystem\DoctorAppointmentSystem.DataAccess\bin\Debug\net8.0\DoctorAppointmentSystem.Utilities.dll
 C:\Users\fathy\source\repos\DoctorAppointmentSystem\DoctorAppointmentSystem.DataAccess\bin\Debug\net8.0\DoctorAppointmentSystem.Utilities.pdb
+C:\Users\fathy\source\repos\DoctorAppointmentSystem\DoctorAppointmentSystem.DataAccess\obj\Debug\net8.0\DoctorAppointmentSystem.DataAccess.sourcelink.json

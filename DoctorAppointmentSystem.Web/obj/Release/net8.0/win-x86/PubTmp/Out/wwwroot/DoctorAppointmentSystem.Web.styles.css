@@ -1,0 +1,151 @@
+/* _content/DoctorAppointmentSystem.Web/Views/Shared/_Layout.cshtml.rz.scp.css */
+/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+/*
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+a {
+  color: #0077cc;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+}
+*/
+
+
+
+/* site.css */
+body[b-lzl5rez8mr] {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header[b-lzl5rez8mr] {
+    background-color: #007bff;
+    color: white;
+}
+
+a.navbar-brand[b-lzl5rez8mr] {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+    color: white;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.navbar-nav .nav-link[b-lzl5rez8mr] {
+    color: #f4f4f4 !important;
+}
+
+    .navbar-nav .nav-link:hover[b-lzl5rez8mr] {
+        color: #ffeb3b !important;
+    }
+
+.btn-primary[b-lzl5rez8mr] {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active[b-lzl5rez8mr],
+.nav-pills .show > .nav-link[b-lzl5rez8mr] {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.border-top[b-lzl5rez8mr] {
+    border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom[b-lzl5rez8mr] {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow[b-lzl5rez8mr] {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy[b-lzl5rez8mr] {
+    font-size: 1rem;
+    line-height: inherit;
+}
+
+.footer[b-lzl5rez8mr] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    border-top: 1px solid #e5e5e5;
+}
+
+    .footer a[b-lzl5rez8mr] {
+        color: #ffeb3b;
+        text-decoration: none;
+    }
+
+        .footer a:hover[b-lzl5rez8mr] {
+            text-decoration: underline;
+        }
+
+/* Main content styles */
+.container[b-lzl5rez8mr] {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .navbar-nav[b-lzl5rez8mr] {
+        font-size: 18px;
+    }
+
+    .navbar-brand[b-lzl5rez8mr] {
+        font-size: 24px;
+    }
+}

@@ -1,7 +1,16 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\fathy\\source\\repos\\DoctorAppointmentSystem\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{859BFA73-D651-41A5-BD6D-ECBA8F053BCE}|DoctorAppointmentSystem.Web\\DoctorAppointmentSystem.Web.csproj|c:\\users\\fathy\\source\\repos\\doctorappointmentsystem\\doctorappointmentsystem.web\\areas\\identity\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{859BFA73-D651-41A5-BD6D-ECBA8F053BCE}|DoctorAppointmentSystem.Web\\DoctorAppointmentSystem.Web.csproj|solutionrelative:doctorappointmentsystem.web\\areas\\identity\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{859BFA73-D651-41A5-BD6D-ECBA8F053BCE}|DoctorAppointmentSystem.Web\\DoctorAppointmentSystem.Web.csproj|c:\\users\\fathy\\source\\repos\\doctorappointmentsystem\\doctorappointmentsystem.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{859BFA73-D651-41A5-BD6D-ECBA8F053BCE}|DoctorAppointmentSystem.Web\\DoctorAppointmentSystem.Web.csproj|solutionrelative:doctorappointmentsystem.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 231,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,6 +39,32 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\fathy\\source\\repos\\DoctorAppointmentSystem\\DoctorAppointmentSystem.Web\\Areas\\Identity\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "DoctorAppointmentSystem.Web\\Areas\\Identity\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\fathy\\source\\repos\\DoctorAppointmentSystem\\DoctorAppointmentSystem.Web\\Areas\\Identity\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "DoctorAppointmentSystem.Web\\Areas\\Identity\\Controllers\\AccountController.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAwwDwAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T16:53:34.175Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\fathy\\source\\repos\\DoctorAppointmentSystem\\DoctorAppointmentSystem.Web\\appsettings.json",
+              "RelativeDocumentMoniker": "DoctorAppointmentSystem.Web\\appsettings.json",
+              "ToolTip": "C:\\Users\\fathy\\source\\repos\\DoctorAppointmentSystem\\DoctorAppointmentSystem.Web\\appsettings.json",
+              "RelativeToolTip": "DoctorAppointmentSystem.Web\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-04T15:35:20.768Z",
+              "EditorCaption": ""
             }
           ]
         }

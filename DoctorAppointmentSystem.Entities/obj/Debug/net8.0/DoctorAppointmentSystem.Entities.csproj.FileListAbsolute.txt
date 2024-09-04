@@ -13,3 +13,4 @@ C:\Users\fathy\source\repos\DoctorAppointmentSystem\DoctorAppointmentSystem.Enti
 C:\Users\fathy\source\repos\DoctorAppointmentSystem\DoctorAppointmentSystem.Entities\bin\Debug\net8.0\DoctorAppointmentSystem.Utilities.dll
 C:\Users\fathy\source\repos\DoctorAppointmentSystem\DoctorAppointmentSystem.Entities\bin\Debug\net8.0\DoctorAppointmentSystem.Utilities.pdb
 C:\Users\fathy\source\repos\DoctorAppointmentSystem\DoctorAppointmentSystem.Entities\obj\Debug\net8.0\DoctorAp.A83E4742.Up2Date
+C:\Users\fathy\source\repos\DoctorAppointmentSystem\DoctorAppointmentSystem.Entities\obj\Debug\net8.0\DoctorAppointmentSystem.Entities.sourcelink.json

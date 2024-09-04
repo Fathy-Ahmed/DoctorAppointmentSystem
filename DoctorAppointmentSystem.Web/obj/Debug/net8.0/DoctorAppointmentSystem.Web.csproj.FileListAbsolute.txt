@@ -562,3 +562,4 @@ C:\Users\fathy\source\repos\DoctorAppointmentSystem\DoctorAppointmentSystem.Web\
 C:\Users\fathy\source\repos\DoctorAppointmentSystem\DoctorAppointmentSystem.Web\bin\Debug\net8.0\DoctorAppointmentSystem.Utilities.dll
 C:\Users\fathy\source\repos\DoctorAppointmentSystem\DoctorAppointmentSystem.Web\bin\Debug\net8.0\DoctorAppointmentSystem.Utilities.pdb
 C:\Users\fathy\source\repos\DoctorAppointmentSystem\DoctorAppointmentSystem.Web\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\fathy\source\repos\DoctorAppointmentSystem\DoctorAppointmentSystem.Web\obj\Debug\net8.0\DoctorAppointmentSystem.Web.sourcelink.json

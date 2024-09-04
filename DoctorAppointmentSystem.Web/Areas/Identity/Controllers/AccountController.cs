@@ -51,14 +51,15 @@ namespace DoctorAppointmentSystem.Web.Areas.Identity.Controllers
                IdentityResult Result = await userManager.CreateAsync(user, newUserVM.Password);
                 if (Result.Succeeded)
                 {
-                    await signInManager.SignInAsync(user, isPersistent: false);
+                    
                     if (!roleManager.RoleExistsAsync(SD.AdminRole).GetAwaiter().GetResult())
                     {
                         await roleManager.CreateAsync(new IdentityRole(SD.AdminRole));
                         await roleManager.CreateAsync(new IdentityRole(SD.DoctorRole));
                         await roleManager.CreateAsync(new IdentityRole(SD.UserRole));
                         await userManager.AddToRoleAsync(user, SD.AdminRole);
-                    }else
+                    }
+                    else
                     {
                         if (newUserVM.IsDoctor)
                             await userManager.AddToRoleAsync(user, SD.DoctorRole);
@@ -66,8 +67,9 @@ namespace DoctorAppointmentSystem.Web.Areas.Identity.Controllers
                             await userManager.AddToRoleAsync(user, SD.UserRole);
 
                     }
+                    await signInManager.SignInAsync(user, isPersistent: false);
 
-                    if(await userManager.IsInRoleAsync(user,SD.AdminRole))
+                    if (await userManager.IsInRoleAsync(user,SD.AdminRole))
                     {
                         return RedirectToAction("Index", "Admin", new { area = "User" });
                     }
