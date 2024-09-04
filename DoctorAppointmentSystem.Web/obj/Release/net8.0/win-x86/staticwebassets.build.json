@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "54kDujvnVXfHWaO0eacdlafhCiy0+OzNRTvE1/AAeyo=",
+  "Hash": "7zil6R0fqsdHYDzN3hIo9McRmu/QxiMDNgcpqsURTZM=",
   "Source": "DoctorAppointmentSystem.Web",
   "BasePath": "_content/DoctorAppointmentSystem.Web",
   "Mode": "Default",
@@ -224,6 +224,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\Doctors\\aa903f1b-ab25-462c-b0f3-2aff816f2977.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\fathy\\source\\repos\\DoctorAppointmentSystem\\DoctorAppointmentSystem.Web\\wwwroot\\images\\Doctors\\b548df3c-7e42-4a14-8aba-1780bc56b1ca.png",
+      "SourceId": "DoctorAppointmentSystem.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\fathy\\source\\repos\\DoctorAppointmentSystem\\DoctorAppointmentSystem.Web\\wwwroot\\",
+      "BasePath": "_content/DoctorAppointmentSystem.Web",
+      "RelativePath": "images/Doctors/b548df3c-7e42-4a14-8aba-1780bc56b1ca.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Doctors\\b548df3c-7e42-4a14-8aba-1780bc56b1ca.png"
     },
     {
       "Identity": "C:\\Users\\fathy\\source\\repos\\DoctorAppointmentSystem\\DoctorAppointmentSystem.Web\\wwwroot\\images\\Doctors\\d29b9bc3-4f58-4a2b-9dec-e70ca948865f.png",

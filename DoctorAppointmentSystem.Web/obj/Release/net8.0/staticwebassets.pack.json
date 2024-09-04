@@ -41,6 +41,10 @@
       "PackagePath": "staticwebassets\\images\\Doctors\\aa903f1b-ab25-462c-b0f3-2aff816f2977.jpg"
     },
     {
+      "Id": "C:\\Users\\fathy\\source\\repos\\DoctorAppointmentSystem\\DoctorAppointmentSystem.Web\\wwwroot\\images\\Doctors\\b548df3c-7e42-4a14-8aba-1780bc56b1ca.png",
+      "PackagePath": "staticwebassets\\images\\Doctors\\b548df3c-7e42-4a14-8aba-1780bc56b1ca.png"
+    },
+    {
       "Id": "C:\\Users\\fathy\\source\\repos\\DoctorAppointmentSystem\\DoctorAppointmentSystem.Web\\wwwroot\\images\\Doctors\\d29b9bc3-4f58-4a2b-9dec-e70ca948865f.png",
       "PackagePath": "staticwebassets\\images\\Doctors\\d29b9bc3-4f58-4a2b-9dec-e70ca948865f.png"
     },
